@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ArticleList from './ArticleList';
+import TotalList from './TotalList';
 
 const listData = [
 
@@ -34,12 +35,41 @@ const listData = [
 ];
 
 class App extends Component {
+  // constructor(props) {
+  //    super(props);
+  //    this.state = { data: [], mode: 'LOADING' };
+  // }
+  // componentDidMount() {
+  //   this.load();
+  // }
+  //
+  // load() {
+  //   htmlXml('http://bla...', function (resultData){
+  //     this.setState({
+  //         mode: 'LOADED',
+  //         data: resultData
+  //     });
+  //
+  //   });
+  //
+  // }
+  //
   render() {
+    //
+    //
+    // if (this.state.mode === 'LOADING') {
+    //
+    // }
+    // else {
+    //
+    //
+    // }
+
+
     return (
     <div>
-      <ArticleList
-      data={listData}
-      />
+      <ArticleList data={listData} />
+      <TotalList data={listData} />
     </div>
     );
   }
